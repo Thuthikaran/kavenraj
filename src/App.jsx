@@ -9,20 +9,23 @@ import ConfidentialityPrivacy from './components/ConfidentialityPrivacy';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faCanadianMapleLeaf } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 
 const App = () => {
-  const [activeComponent, setActiveComponent] = useState('About');
+  const [activeComponent, setActiveComponent] = useState("About");
 
   const components = {
-    About: About,
-    SelfEmployed: SelfEmployed,
-    CreditScoreBelowAverage: CreditScoreBelowAverage,
-    FirstTimeHomebuyer: FirstTimeHomebuyer,
-    Refinance: Refinance,
-    PrivateMortgage: PrivateMortgage,
-    InvestingPrivateMortgage: InvestingPrivateMortgage,
-    ConfidentialityPrivacy: ConfidentialityPrivacy,
+    "About": About,
+    "Self Employed": SelfEmployed,
+    "Credit-Score Below Average": CreditScoreBelowAverage,
+    "First-Time homebuyer": FirstTimeHomebuyer,
+    "Refinance": Refinance,
+    "Private Mortgage": PrivateMortgage,
+    "Investing in Private Mortgage": InvestingPrivateMortgage,
+    "Confidentiality & Privacy": ConfidentialityPrivacy,
   };
 
   const ComponentToRender = components[activeComponent];
@@ -44,18 +47,21 @@ const App = () => {
           </p>
 
           {/* Navigation Links */}
-          <div className="mt-6">
+          <div className="my-10">
             {Object.keys(components).map((name) => (
               <div
                 key={name}
-                className={`cursor-pointer text-white p-2 rounded ${
-                  activeComponent === name ? 'bg-blue-700' : ''
-                }`}
+                className={`cursor-pointer text-white p-2 rounded ${activeComponent === name ? 'bg-blue-700' : ''}`}
                 onClick={() => setActiveComponent(name)}
               >
                 {name}
               </div>
             ))}
+          </div>
+          <div className="flex justify-center ">
+            <FontAwesomeIcon icon={faInstagram} className="text-white px-5 text-5xl" />
+            <FontAwesomeIcon icon={faLinkedin} className="text-white px-5 text-5xl" />
+            <FontAwesomeIcon icon={faSquareFacebook} className="text-white px-5 text-5xl" />
           </div>
         </div>
       </div>
