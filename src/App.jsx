@@ -17,11 +17,11 @@ const App = () => {
   const [activeComponent, setActiveComponent] = useState('About');
 
   const components = {
-    About,
+    'About':About,
     'Self Employed': SelfEmployed,
     'Credit-Score Below Average': CreditScoreBelowAverage,
     'First-Time homebuyer': FirstTimeHomebuyer,
-    Refinance,
+    'Refinance': Refinance,
     'Private Mortgage': PrivateMortgage,
     'Investing in Private Mortgage': InvestingPrivateMortgage,
     'Confidentiality & Privacy': ConfidentialityPrivacy,
@@ -34,9 +34,8 @@ const App = () => {
   );
 
   return (
-    <div className="flex flex-col  lg:flex-row h-screen overflow-hidden">
-      <div className="sidebar flex-1 bg-[navy]">
-        {/* sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-purple-500 */}
+    <div className="flex flex-col lg:flex-row h-screen overflow-hidden">
+      <div className="flex-1 bg-[navy]">
         <div className="flex flex-col gap-10 p-10">
           <header>
             <h1 className="text-white text-5xl">Kavenraj Baskaran</h1>
@@ -71,7 +70,14 @@ const App = () => {
         </div>
       </div>
       <div className="flex-2 overflow-y-auto bg-gray-100 p-4">
-        <ComponentToRender />
+        {Object.values(components).map((Component, index) => (
+          <div key={index} className="lg:hidden">
+            <Component/>
+          </div>
+        ))}
+        <div className="hidden lg:block">
+          <ComponentToRender />
+        </div>
       </div>
     </div>
   );
