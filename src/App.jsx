@@ -30,7 +30,7 @@ const App = () => {
   const ComponentToRender = components[activeComponent] || (() => <div>Component not found</div>);
 
   const SocialIcon = ({ icon, label }) => (
-    <FontAwesomeIcon icon={icon} aria-label={label} className="text-white px-5 text-3xl hover:text-blue-300" />
+    <FontAwesomeIcon icon={icon} aria-label={label} className="text-white lg:px-5 pr-5 text-3xl hover:text-blue-300" />
   );
 
   return (
