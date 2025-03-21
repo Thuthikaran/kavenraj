@@ -62,7 +62,7 @@ const App = () => {
                   <span
                     className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all ${
                       activeComponent === name
-                        ? 'w-16 bg-white' // Active state styles
+                        ? 'w-20 bg-white' // Active state styles
                         : 'group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200'
                     } motion-reduce:transition-none`}
                   ></span>
