@@ -35,7 +35,8 @@ const App = () => {
 
   return (
     <div className="flex flex-col  lg:flex-row h-screen overflow-hidden">
-      <div className="sidebar flex-1 bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-purple-500">
+      <div className="sidebar flex-1 bg-[navy]">
+        {/* sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-purple-500 */}
         <div className="flex flex-col gap-10 p-10">
           <header>
             <h1 className="text-white text-5xl">Kavenraj Baskaran</h1>
@@ -49,7 +50,7 @@ const App = () => {
               their homeownership dreams with confidence and clarity.
             </p>
           </header>
-          <nav>
+          <nav className="hidden lg:block">
             {Object.keys(components).map((name) => (
               <div
                 key={name}
@@ -62,7 +63,7 @@ const App = () => {
               </div>
             ))}
           </nav>
-          <div className="text-center">
+          <div className="text-center hidden lg:block">
             <SocialIcon icon={faInstagram} label="Instagram" />
             <SocialIcon icon={faLinkedin} label="LinkedIn" />
             <SocialIcon icon={faSquareFacebook} label="Facebook" />
@@ -70,9 +71,7 @@ const App = () => {
         </div>
       </div>
       <div className="flex-2 overflow-y-auto bg-gray-100 p-4">
-        <Suspense fallback={<div>Loading...</div>}>
-          <ComponentToRender />
-        </Suspense>
+        <ComponentToRender />
       </div>
     </div>
   );
