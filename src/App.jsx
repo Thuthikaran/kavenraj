@@ -1,76 +1,81 @@
-import About from './components/About';
-import SelfEmployed from './components/SelfEmployed';
-import CreditScoreBelowAverage from './components/CreditScoreBelowAverage';
-import FirstTimeHomebuyer from './components/FirstTimeHomebuyer';
-import Refinance from './components/Refinance';
-import PrivateMortgage from './components/PrivateMortgage';
-import InvestingPrivateMortgage from './components/InvestingPrivateMortgage';
-import ConfidentialityPrivacy from './components/ConfidentialityPrivacy';
+import React, { useState, lazy, Suspense } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faCanadianMapleLeaf } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
-import { useState } from 'react';
+import { faCanadianMapleLeaf, faInstagram, faLinkedin, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
+
+// Lazy load components
+const About = lazy(() => import('./components/About'));
+const SelfEmployed = lazy(() => import('./components/SelfEmployed'));
+const CreditScoreBelowAverage = lazy(() => import('./components/CreditScoreBelowAverage'));
+const FirstTimeHomebuyer = lazy(() => import('./components/FirstTimeHomebuyer'));
+const Refinance = lazy(() => import('./components/Refinance'));
+const PrivateMortgage = lazy(() => import('./components/PrivateMortgage'));
+const InvestingPrivateMortgage = lazy(() => import('./components/InvestingPrivateMortgage'));
+const ConfidentialityPrivacy = lazy(() => import('./components/ConfidentialityPrivacy'));
 
 const App = () => {
-  const [activeComponent, setActiveComponent] = useState("About");
+  const [activeComponent, setActiveComponent] = useState('About');
 
   const components = {
-    "About": About,
-    "Self Employed": SelfEmployed,
-    "Credit-Score Below Average": CreditScoreBelowAverage,
-    "First-Time homebuyer": FirstTimeHomebuyer,
-    "Refinance": Refinance,
-    "Private Mortgage": PrivateMortgage,
-    "Investing in Private Mortgage": InvestingPrivateMortgage,
-    "Confidentiality & Privacy": ConfidentialityPrivacy,
+    About,
+    'Self Employed': SelfEmployed,
+    'Credit-Score Below Average': CreditScoreBelowAverage,
+    'First-Time homebuyer': FirstTimeHomebuyer,
+    Refinance,
+    'Private Mortgage': PrivateMortgage,
+    'Investing in Private Mortgage': InvestingPrivateMortgage,
+    'Confidentiality & Privacy': ConfidentialityPrivacy,
   };
 
-  const ComponentToRender = components[activeComponent];
+  const ComponentToRender = components[activeComponent] || (() => <div>Component not found</div>);
+
+  const SocialIcon = ({ icon, label }) => (
+    <FontAwesomeIcon icon={icon} aria-label={label} className="text-white px-5 text-5xl hover:text-blue-300" />
+  );
 
   return (
-    <div className="flex h-screen overflow-hidden">
-      {/* Left Sidebar */}
-      <div className="flex-1 bg-[navy]  ">
-        <div className="basic-info px-10 py-10 ">
-          <h1 className="text-white text-5xl">Kavenraj Baskaran</h1>
-          <h2 className="text-[grey] text-1xl underline">Mortgage Specialist Level 2 - M17001319</h2>
-          <h3 className="text-white text-1xl">
-            Based in <FontAwesomeIcon icon={faLocationDot} /> Toronto, Canada{' '}
-            <FontAwesomeIcon className="text-[red]" icon={faCanadianMapleLeaf} />
-          </h3>
-          <p className="text-[white] font-bold text-sm">
-            I craft personalized,stress-free mortgage solutions that empower individuals and families to achieve their
-            homeownership dreams with confidence and clarity.
-          </p>
-
-          {/* Navigation Links */}
-          <div className="my-10">
+    <div className="flex flex-col  lg:flex-row h-screen overflow-hidden">
+      <div className="sidebar flex-1 bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-purple-500">
+        <div className="flex flex-col gap-10 p-10">
+          <header>
+            <h1 className="text-white text-5xl">Kavenraj Baskaran</h1>
+            <h2 className="text-[grey] text-1xl underline">Mortgage Specialist Level 2 - M17001319</h2>
+            <h3 className="text-white text-1xl">
+              Based in <FontAwesomeIcon icon={faLocationDot} /> Toronto, Canada{' '}
+              <FontAwesomeIcon className="text-[red]" icon={faCanadianMapleLeaf} />
+            </h3>
+            <p className="text-[white] font-bold text-sm">
+              I craft personalized, stress-free mortgage solutions that empower individuals and families to achieve
+              their homeownership dreams with confidence and clarity.
+            </p>
+          </header>
+          <nav>
             {Object.keys(components).map((name) => (
               <div
                 key={name}
-                className={`cursor-pointer text-white p-2 rounded ${activeComponent === name ? 'bg-blue-700' : ''}`}
+                className={`cursor-pointer text-white p-2 rounded ${
+                  activeComponent === name ? 'bg-blue-700' : 'hover:bg-blue-500'
+                }`}
                 onClick={() => setActiveComponent(name)}
               >
                 {name}
               </div>
             ))}
-          </div>
-          <div className="flex justify-center ">
-            <FontAwesomeIcon icon={faInstagram} className="text-white px-5 text-5xl" />
-            <FontAwesomeIcon icon={faLinkedin} className="text-white px-5 text-5xl" />
-            <FontAwesomeIcon icon={faSquareFacebook} className="text-white px-5 text-5xl" />
+          </nav>
+          <div className="text-center">
+            <SocialIcon icon={faInstagram} label="Instagram" />
+            <SocialIcon icon={faLinkedin} label="LinkedIn" />
+            <SocialIcon icon={faSquareFacebook} label="Facebook" />
           </div>
         </div>
       </div>
-
-      {/* Right Section */}
       <div className="flex-2 overflow-y-auto bg-gray-100 p-4">
-        <ComponentToRender />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ComponentToRender />
+        </Suspense>
       </div>
     </div>
   );
 };
+
 export default App;
