@@ -34,17 +34,17 @@ const App = () => {
   );
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen overflow-hidden">
+    <div className="flex flex-col lg:flex-row lg:h-screen lg:overflow-hidden">
       <div className="flex-1 bg-[navy]">
-        <div className="flex flex-col gap-10 p-10">
+        <div className="flex flex-col gap-15 p-10">
           <header>
-            <h1 className="text-white text-5xl">Kavenraj Baskaran</h1>
-            <h2 className="text-[grey] text-1xl underline">Mortgage Specialist Level 2 - M17001319</h2>
-            <h3 className="text-white text-1xl">
+            <h1 className="text-white text-4xl font-bold">Kavenraj Baskaran</h1>
+            <h2 className="text-[grey]  underline font-thin">Mortgage Specialist Level 2 - M17001319</h2>
+            <h3 className="text-white text-1xl font-bold">
               Based in <FontAwesomeIcon icon={faLocationDot} /> Toronto, Canada{' '}
               <FontAwesomeIcon className="text-[red]" icon={faCanadianMapleLeaf} />
             </h3>
-            <p className="text-[white] font-bold text-sm">
+            <p className="text-[white] italic text-sm">
               I craft personalized, stress-free mortgage solutions that empower individuals and families to achieve
               their homeownership dreams with confidence and clarity.
             </p>
@@ -76,7 +76,9 @@ const App = () => {
           </div>
         ))}
         <div className="hidden lg:block">
+          <Suspense fallback={<div>Loading...</div>}>
           <ComponentToRender />
+          </Suspense>
         </div>
       </div>
     </div>
