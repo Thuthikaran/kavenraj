@@ -12,6 +12,7 @@ const Refinance = lazy(() => import('./components/Refinance'));
 const PrivateMortgage = lazy(() => import('./components/PrivateMortgage'));
 const InvestingPrivateMortgage = lazy(() => import('./components/InvestingPrivateMortgage'));
 const ConfidentialityPrivacy = lazy(() => import('./components/ConfidentialityPrivacy'));
+const Contact = lazy(()=> import('./components/Contact'))
 
 const App = () => {
   const [activeComponent, setActiveComponent] = useState('About');
@@ -25,6 +26,7 @@ const App = () => {
     'Private Mortgage': PrivateMortgage,
     'Investing in Private Mortgage': InvestingPrivateMortgage,
     'Confidentiality & Privacy': ConfidentialityPrivacy,
+    'Contact': Contact
   };
 
   const ComponentToRender = components[activeComponent] || (() => <div>Component not found</div>);
@@ -36,7 +38,7 @@ const App = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:h-screen lg:overflow-hidden">
       <div className="flex-1 bg-[navy]">
-        <div className="flex flex-col p-10 gap-5 md:gap-5 lg:gap-18">
+        <div className="flex flex-col p-10 gap-5 md:gap-5 lg:gap-15">
           <header>
             <h1 className="text-white text-4xl font-bold">Kavenraj Baskaran</h1>
             <h2 className="text-[grey]  underline font-thin">Mortgage Specialist Level 2 - M17001319</h2>
@@ -53,7 +55,7 @@ const App = () => {
             {Object.keys(components).map((name) => (
               <div
                 key={name}
-                className={`cursor-pointer text-white uppercase text-sm p-2 rounded ${
+                className={`cursor-pointer text-white font-bold uppercase text-xs p-2 rounded ${
                   activeComponent === name ? 'bg-blue-700' : 'hover:bg-blue-500'
                 }`}
                 onClick={() => setActiveComponent(name)}
