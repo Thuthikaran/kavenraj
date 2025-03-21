@@ -30,13 +30,13 @@ const App = () => {
   const ComponentToRender = components[activeComponent] || (() => <div>Component not found</div>);
 
   const SocialIcon = ({ icon, label }) => (
-    <FontAwesomeIcon icon={icon} aria-label={label} className="text-white px-5 text-5xl hover:text-blue-300" />
+    <FontAwesomeIcon icon={icon} aria-label={label} className="text-white px-5 text-3xl hover:text-blue-300" />
   );
 
   return (
     <div className="flex flex-col lg:flex-row lg:h-screen lg:overflow-hidden">
       <div className="flex-1 bg-[navy]">
-        <div className="flex flex-col gap-15 p-10">
+        <div className="flex flex-col gap-12 p-10">
           <header>
             <h1 className="text-white text-4xl font-bold">Kavenraj Baskaran</h1>
             <h2 className="text-[grey]  underline font-thin">Mortgage Specialist Level 2 - M17001319</h2>
@@ -62,7 +62,7 @@ const App = () => {
               </div>
             ))}
           </nav>
-          <div className="text-center hidden lg:block">
+          <div className="cursor-pointer">
             <SocialIcon icon={faInstagram} label="Instagram" />
             <SocialIcon icon={faLinkedin} label="LinkedIn" />
             <SocialIcon icon={faSquareFacebook} label="Facebook" />
@@ -72,12 +72,12 @@ const App = () => {
       <div className="flex-2 overflow-y-auto bg-gray-100 p-4">
         {Object.values(components).map((Component, index) => (
           <div key={index} className="lg:hidden">
-            <Component/>
+            <Component />
           </div>
         ))}
         <div className="hidden lg:block">
           <Suspense fallback={<div>Loading...</div>}>
-          <ComponentToRender />
+            <ComponentToRender />
           </Suspense>
         </div>
       </div>
