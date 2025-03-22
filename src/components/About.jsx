@@ -5,17 +5,18 @@ const About = () => {
   return (
     <div className="">
       <div className="lg:flex gap-1 mt-2">
-        <div className="flex-2 border p-5 text-center">
+        <div className="flex-2 p-5 text-center">
           <h2 className="text-2xl font-bold text-[#266EB7] font-bold">Tailored Mortgage Solutions Simplified</h2>
           <p className="text-md mt-2 font-extrabold text-black">#Top Mortgage Specialist in Toronto & Canada*</p>
           <p className="text-lg mt-4 font-extrathin font-sm">
             Expert guidance for first-time buyers, refinancing, and private mortgages.
           </p>
         </div>
-        <div className="flex-2 border bg-[#266EB7]">
+        <div className="flex-1 bg-[#266EB7]">
           <img
             src="https://res.cloudinary.com/drxas1wpe/image/upload/v1742643794/Photoroom_20250314_220405_lq7u1u.png"
             alt=""
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
