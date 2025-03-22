@@ -4,7 +4,7 @@ const About = () => {
     <div className="mx-5">
       <div className="lg:flex gap-1 mt-2">
         <div className="flex-2 p-5 text-center m-auto">
-          <h2 className="text-5xl font-bold text-[#266EB7] font-bold">Tailored Mortgage Solutions Simplified</h2>
+          <h2 className="lg:text-5xl font-bold text-[#266EB7] font-bold">Tailored Mortgage Solutions Simplified</h2>
           <p className="text-2xl mt-2 font-extrabold text-black">#Top Mortgage Specialist in Toronto & Canada*</p>
           <p className="text-sm mt-2 font-semibold text-black">
             Expert guidance for first-time buyers, refinancing, and private mortgages.
