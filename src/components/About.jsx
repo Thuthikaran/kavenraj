@@ -3,19 +3,23 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faCanadianMapleLeaf } from '@fortawesome/free-brands-svg-icons';
 const About = () => {
   return (
-    <div className="p-6">
-      <div className="lg:flex gap-1">
-        <div className="flex-2 border p-5">
-          <h2 className="text-3xl font-bold">Tailored Mortgage Solutions Simplified</h2>
-          <p className="text-xl mt-2">#Top Mortgage Specialist in Toronto & Canada*</p>
-          <p className="text-lg mt-4">Expert guidance for first-time buyers, refinancing, and private mortgages.</p>
+    <div className="">
+      <div className="lg:flex gap-1 mt-2">
+        <div className="flex-2 border p-5 text-center">
+          <h2 className="text-2xl font-bold text-[#266EB7] font-bold">Tailored Mortgage Solutions Simplified</h2>
+          <p className="text-md mt-2 font-extrabold text-black">#Top Mortgage Specialist in Toronto & Canada*</p>
+          <p className="text-lg mt-4 font-extrathin font-sm">
+            Expert guidance for first-time buyers, refinancing, and private mortgages.
+          </p>
         </div>
-        <div className="flex-1 border p-5">
-          <p>an image will soon show up</p>
-          <img src="" alt="" />
+        <div className="flex-2 border bg-[#266EB7]">
+          <img
+            src="https://res.cloudinary.com/drxas1wpe/image/upload/v1742643794/Photoroom_20250314_220405_lq7u1u.png"
+            alt=""
+          />
         </div>
       </div>
-      <div className='border p-5 mt-5'>
+      <div className="border p-5 mt-5">
         <h1 className="text-xl font-semibold">Hi, I’m Kavenraj</h1>
         <p className="text-lg">
           Mortgage Broker <FontAwesomeIcon icon={faLocationDot} /> Ottawa Canada{' '}
