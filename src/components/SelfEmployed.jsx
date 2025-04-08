@@ -32,21 +32,21 @@ const SelfEmployedIndividuals = () => {
       {/* Key Benefits - unchanged */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Personalized Service</h3>
+          <h3 className="font-bold text-lg mb-2 text-center text-[#000080]">Personalized Service</h3>
           <p className="text-gray-600 text-center">
             One-on-one attention to ensure your needs are met as a self-employed professional.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Flexible Verification</h3>
+          <h3 className="font-bold text-lg mb-2 text-center text-[#000080]">Flexible Verification</h3>
           <p className="text-gray-600 text-center">
             Bank statements and invoices accepted instead of traditional pay stubs.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Fast Results</h3>
+          <h3 className="font-bold text-lg mb-2 text-center text-[#000080]">Fast Results</h3>
           <p className="text-gray-600 text-center">Same-day application submission once documents are received.</p>
         </div>
       </div>

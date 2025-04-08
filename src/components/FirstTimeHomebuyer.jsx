@@ -32,19 +32,19 @@ const FirstTimeHomebuyers = () => {
       {/* Key Benefits */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Personalized Service</h3>
+          <h3 className="font-bold text-lg text-[#000080] mb-2 text-center">Personalized Service</h3>
           <p className="text-gray-600 text-center">
             As a solo mortgage professional, I provide one-on-one attention to ensure your needs are met.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Low Down Payment Options</h3>
+          <h3 className="font-bold text-lg text-[#000080] mb-2 text-center">Low Down Payment Options</h3>
           <p className="text-gray-600 text-center">Explore programs designed to make homeownership more affordable.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Fast Results</h3>
+          <h3 className="font-bold text-lg text-[#000080] mb-2 text-center">Fast Results</h3>
           <p className="text-gray-600 text-center">
             Once I have all the necessary documents, I'll submit your application the same day – no delays.
           </p>

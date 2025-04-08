@@ -27,19 +27,19 @@ const Refinancing = () => {
       {/* Key Benefits */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Debt Consolidation</h3>
+          <h3 className="font-bold text-lg text-[#000080] mb-2 text-center">Debt Consolidation</h3>
           <p className="text-gray-600 text-center">
             Simplify finances by combining high-interest debts into one manageable payment.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Achieve Goals</h3>
+          <h3 className="font-bold text-lg text-[#000080] mb-2 text-center">Achieve Goals</h3>
           <p className="text-gray-600 text-center">Fund major purchases, start a business, or invest in your future.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Support Loved Ones</h3>
+          <h3 className="font-bold text-lg text-[#000080] mb-2 text-center">Support Loved Ones</h3>
           <p className="text-gray-600 text-center">Use your home's equity to help family members achieve their dreams.</p>
         </div>
       </div>
