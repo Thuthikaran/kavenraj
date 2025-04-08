@@ -9,6 +9,15 @@ const About = () => {
           <p className="text-sm mt-2 font-semibold text-black">
             Expert guidance for first-time buyers, refinancing, and private mortgages.
           </p>
+          <p className="text-sm my-5 font-extralight text-black">
+            I’m Kavenraj Baskaran, and I understand that life happens. Your credit score doesn’t define your potential,
+            and it certainly doesn’t define how hard I’ll work for you. Whether you’re looking to buy a new home,
+            refinance to consolidate debt, or achieving an important goal, I’m here to help. With flexible solutions and
+            a commitment to your success, I’ll personally guide you every step of the way.
+          </p>
+          <p className="font-bold text-[#000080]">
+            Get Started Today – Quick Pre-Qualification and Same-Day Submissions!
+          </p>
         </div>
         <div className="flex-1 bg-[#266EB7] rounded-3xl">
           <img
