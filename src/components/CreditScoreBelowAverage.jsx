@@ -1,76 +1,70 @@
 import React from 'react';
 
-const CreditScoreSolutions = () => {
+const BelowAverageCredit = () => {
   return (
-    <section className="max-w-3xl mx-auto p-6 text-gray-800 space-y-6">
-      <h2 className="text-2xl font-bold">Credit Score</h2>
+    <div className="max-w-4xl mx-auto px-4 py-6">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-[#266EB7] mb-3">Credit-Score Below Average?</h1>
+        <p className="text-xl italic text-gray-600 mb-4">
+          Your Credit Score Is Just a Number – Let's Find the Right Mortgage or Refinancing Solution for You!
+        </p>
+      </div>
 
-      <h3 className="text-xl font-semibold">Credit-Score Below Average:</h3>
-      <p className="italic">
-        Your Credit Score Is Just a Number – Let’s Find the Right Mortgage or Refinancing Solution for You!
-      </p>
+      {/* Introduction */}
+      <div className="text-center mb-8 max-w-2xl mx-auto">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          I'm Kavenraj Baskaran, and I understand that life happens.
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Your credit score doesn't define your potential, and it certainly doesn't define how hard I'll work for you.
+          Whether you're looking to buy a new home, refinance to consolidate debt, or achieving an important goal, I'm
+          here to help. With flexible solutions and a commitment to your success, I'll personally guide you every step
+          of the way.
+        </p>
 
-      <p>
-        I’m Kavenraj Baskaran, and I understand that life happens. Your credit score doesn’t define your potential, and
-        it certainly doesn’t define how hard I’ll work for you. Whether you’re looking to buy a new home, refinance to
-        consolidate debt, or achieving an important goal, I’m here to help. With flexible solutions and a commitment to
-        your success, I’ll personally guide you every step of the way.
-      </p>
+        <div className="mb-6">
+          <p className="font-bold text-[#000080]">
+            Get Started Today – Quick Pre-Qualification and Same-Day Submissions!
+          </p>
+        </div>
+      </div>
 
-      <h3 className="text-xl font-semibold">Let’s Work Together:</h3>
-      <p className="italic">Get Started Today – Quick Pre-Qualification and Same-Day Submissions!</p>
+      {/* Key Benefits */}
+      <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
+        <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Personalized Service</h3>
+          <p className="text-gray-600">
+            As a solo mortgage professional, I provide one-on-one attention to ensure your needs are met.
+          </p>
+        </div>
 
-      <h4 className="text-lg font-semibold">My Promise to You:</h4>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>
-          <strong>Personalized Service:</strong> One-on-one attention to ensure your needs are met.
-        </li>
-        <li>
-          <strong>Fast Results:</strong> Application submitted the <strong>same day</strong> – no delays, no excuses.
-        </li>
-        <li>
-          <strong>Flexible Solutions:</strong> Mortgage and refinancing options tailored to your financial situation.
-        </li>
-      </ul>
+        <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Fast Results</h3>
+          <p className="text-gray-600">
+            Once I have all the necessary documents, I'll submit your application the same day – no delays, no excuses.
+          </p>
+        </div>
 
-      <h3 className="text-xl font-semibold">How It Works</h3>
-      <ol className="list-decimal pl-6 space-y-2">
-        <li>
-          <strong>Apply Online:</strong> Complete my easy pre-qualification form in minutes.
-        </li>
-        <li>
-          <strong>Submit Documents:</strong> I’ll guide you on what’s needed.
-        </li>
-        <li>
-          <strong>Same-Day Submission:</strong> Once I have everything, I’ll submit your application the{' '}
-          <strong>same day</strong>.
-        </li>
-        <li>
-          <strong>Get Approved:</strong> Receive a decision quickly and move closer to your goals.
-        </li>
-      </ol>
+        <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Flexible Solutions</h3>
+          <p className="text-gray-600">
+            I specialize in creating mortgage and refinancing options tailored to your unique financial situation.
+          </p>
+        </div>
+      </div>
 
-      <h3 className="text-xl font-semibold">Why Choose Me?</h3>
-      <p className="italic">
-        I’m not just a mortgage professional – I’m your partner in achieving financial freedom. Here’s what sets me
-        apart:
-      </p>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>
-          <strong>No Judgment:</strong> I focus on your potential, not your past.
-        </li>
-        <li>
-          <strong>Quick Turnaround:</strong> I prioritize speed and efficiency to get you results fast.
-        </li>
-        <li>
-          <strong>Transparent Process:</strong> No hidden fees, no surprises – just clear, honest communication.
-        </li>
-      </ul>
-
-      <h3 className="text-xl font-semibold">Success Stories</h3>
-      <p className="italic">Don’t just take my word for it – see how I’ve helped others with similar challenges.</p>
-    </section>
+      {/* Enhanced Closing Section */}
+      <div className="text-center mt-15">
+        <p className="text-gray-600 italic text-lg">
+          "Your credit score is just a starting point – let me help you write the next chapter of your financial story."
+        </p>
+        <p className="text-gray-500 text-sm mt-2">
+          Contact me today for a no-obligation consultation about your mortgage options.
+        </p>
+      </div>
+    </div>
   );
 };
 
-export default CreditScoreSolutions;
+export default BelowAverageCredit;

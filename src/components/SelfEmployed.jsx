@@ -5,7 +5,7 @@ const SelfEmployedIndividuals = () => {
     <div className="max-w-4xl mx-auto my-5 px-4 py-6">
       {/* Header - unchanged */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-[#266EB7] mb-3">Self-Employed Mortgage Solutions</h1>
+        <h1 className="text-4xl font-bold text-[#266EB7] mb-3">Self-Employed ?</h1>
         <p className="text-xl italic text-gray-600 mb-4">
           Self-Employed? I Speak Your Language – Let's Make Homeownership or Refinancing a Reality!
         </p>
