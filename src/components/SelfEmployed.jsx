@@ -30,7 +30,7 @@ const SelfEmployedIndividuals = () => {
       </div>
 
       {/* Key Benefits - unchanged */}
-      <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
+      <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
           <h3 className="font-bold text-lg mb-2 text-center text-[#000080]">Personalized Service</h3>
           <p className="text-gray-600 text-center">

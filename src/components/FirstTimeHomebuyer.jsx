@@ -13,9 +13,6 @@ const FirstTimeHomebuyers = () => {
 
       {/* Introduction */}
       <div className="text-center mb-8 max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-          I'm Kavenraj Baskaran, and I understand that buying your first home can feel overwhelming.
-        </h2>
         <p className="text-gray-600 mb-6">
           That's why I'm here to guide you every step of the way. From low down payment options to personalized advice,
           I'll work with you to find a mortgage solution that fits your budget and goals. Let's turn your dream of

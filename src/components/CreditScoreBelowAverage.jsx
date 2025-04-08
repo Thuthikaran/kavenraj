@@ -13,9 +13,6 @@ const BelowAverageCredit = () => {
 
       {/* Introduction */}
       <div className="text-center mb-8 max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-          I'm Kavenraj Baskaran, and I understand that life happens.
-        </h2>
         <p className="text-gray-600 mb-6">
           Your credit score doesn't define your potential, and it certainly doesn't define how hard I'll work for you.
           Whether you're looking to buy a new home, refinance to consolidate debt, or achieving an important goal, I'm
