@@ -1,74 +1,53 @@
 import React from 'react';
 
-const ConfidentialityAndPrivacy = () => {
+const ConfidentialityPrivacy = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Confidentiality and Privacy</h1>
+    <div className="max-w-4xl mx-auto px-4 py-6">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-[#266EB7] mb-3">Confidentiality and Privacy</h1>
+        <p className="text-xl italic text-gray-600 mb-4">Your Privacy & Confidentiality Matter to Me</p>
+      </div>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Your Privacy & Confidentiality Matter to Me</h2>
-        <p className="text-gray-600 mb-4">
-          As your mortgage agent, my top priority is not only to find you the best mortgage solutions but also to
-          protect your personal and financial information at every step of the process.
+      {/* Introduction */}
+      <div className="text-center mb-8 max-w-2xl mx-auto">
+        <p className="text-gray-600 mb-6">
+          As your mortgage agent, my top priority is finding you the best solutions while protecting your personal and
+          financial information.
         </p>
-        <p className="text-gray-600">
-          I understand that applying for a mortgage involves sharing sensitive details, and I take that responsibility
-          very seriously. That's why I follow strict confidentiality practices to ensure your information is always
-          secure.
-        </p>
-      </section>
+      </div>
 
-      <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mb-8">
-        <div className="space-y-4">
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
-              <span className="text-blue-600 font-bold">✅</span>
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-700 mb-1">Your Information Stays Protected</h3>
-              <p className="text-gray-600">
-                I will only share your details with a lender after obtaining your explicit consent.
-              </p>
-            </div>
-          </div>
+      {/* Key Benefits */}
+      <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
+        <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Your Information Stays Protected</h3>
+          <p className="text-gray-600">I only share your details with lenders after obtaining your explicit consent.</p>
+        </div>
 
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
-              <span className="text-blue-600 font-bold">✅</span>
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-700 mb-1">Limited Access</h3>
-              <p className="text-gray-600">
-                Your information will only be shared with lenders who align with both their approval criteria and your
-                financial goals.
-              </p>
-            </div>
-          </div>
+        <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Limited Access</h3>
+          <p className="text-gray-600">
+            Your information is only shared with lenders that align with your financial goals.
+          </p>
+        </div>
 
-          <div className="flex items-start">
-            <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
-              <span className="text-blue-600 font-bold">✅</span>
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-700 mb-1">Secure Handling</h3>
-              <p className="text-gray-600">
-                I follow all regulations and best practices to keep your data safe, in compliance with Ontario's privacy
-                laws and industry standards.
-              </p>
-            </div>
-          </div>
+        <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
+          <h3 className="font-bold text-lg text-gray-800 mb-2">Secure Handling</h3>
+          <p className="text-gray-600">I follow all regulations and best practices to keep your data safe.</p>
         </div>
       </div>
 
-      <section className="bg-white p-6 rounded-lg border border-gray-200">
-        <p className="text-gray-600">
-          You can feel confident knowing that your trust and privacy are as important to me as securing the best
-          mortgage solution for you. If you have any questions about how your information is handled, I'm always here to
-          provide clarity and assurance.
+      {/* Enhanced Closing Section */}
+      <div className="text-center mt-15">
+        <p className="text-gray-600 italic text-lg">
+          "Your trust is as important to me as finding you the best mortgage solution."
         </p>
-      </section>
+        <p className="text-gray-500 text-sm mt-2">
+          Contact me if you have any questions about how your information is handled.
+        </p>
+      </div>
     </div>
   );
 };
 
-export default ConfidentialityAndPrivacy;
+export default ConfidentialityPrivacy;
