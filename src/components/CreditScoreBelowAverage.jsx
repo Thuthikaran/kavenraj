@@ -33,22 +33,22 @@ const BelowAverageCredit = () => {
       {/* Key Benefits */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Personalized Service</h3>
-          <p className="text-gray-600">
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Personalized Service</h3>
+          <p className="text-gray-600 text-center">
             As a solo mortgage professional, I provide one-on-one attention to ensure your needs are met.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Fast Results</h3>
-          <p className="text-gray-600">
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Fast Results</h3>
+          <p className="text-gray-600 text-center">
             Once I have all the necessary documents, I'll submit your application the same day – no delays, no excuses.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Flexible Solutions</h3>
-          <p className="text-gray-600">
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Flexible Solutions</h3>
+          <p className="text-gray-600 text-center">
             I specialize in creating mortgage and refinancing options tailored to your unique financial situation.
           </p>
         </div>

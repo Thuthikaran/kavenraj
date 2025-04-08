@@ -26,18 +26,18 @@ const PrivateMortgage = () => {
       {/* Key Benefits */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Competitive Rates</h3>
-          <p className="text-gray-600">Work with trusted private lenders for the most competitive rates possible.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Competitive Rates</h3>
+          <p className="text-gray-600 text-center">Work with trusted private lenders for the most competitive rates possible.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Flexible Approval</h3>
-          <p className="text-gray-600">Focus on property value rather than just credit score or income type.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Flexible Approval</h3>
+          <p className="text-gray-600 text-center">Focus on property value rather than just credit score or income type.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Tailored Solutions</h3>
-          <p className="text-gray-600">
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Tailored Solutions</h3>
+          <p className="text-gray-600 text-center">
             Whether you need to rebuild credit or consolidate debt, I'll match you with the right lender.
           </p>
         </div>

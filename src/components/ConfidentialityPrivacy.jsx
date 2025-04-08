@@ -20,20 +20,20 @@ const ConfidentialityPrivacy = () => {
       {/* Key Benefits */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Your Information Stays Protected</h3>
-          <p className="text-gray-600">I only share your details with lenders after obtaining your explicit consent.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Your Information Stays Protected</h3>
+          <p className="text-gray-600 text-center">I only share your details with lenders after obtaining your explicit consent.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Limited Access</h3>
-          <p className="text-gray-600">
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Limited Access</h3>
+          <p className="text-gray-600 text-center">
             Your information is only shared with lenders that align with your financial goals.
           </p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Secure Handling</h3>
-          <p className="text-gray-600">I follow all regulations and best practices to keep your data safe.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Secure Handling</h3>
+          <p className="text-gray-600 text-center">I follow all regulations and best practices to keep your data safe.</p>
         </div>
       </div>
 

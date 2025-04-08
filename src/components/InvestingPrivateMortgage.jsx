@@ -27,18 +27,18 @@ const PrivateMortgageInvesting = () => {
       {/* Key Benefits */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto my-10">
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">High-Yield Returns</h3>
-          <p className="text-gray-600">Earn competitive interest rates backed by real estate security.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">High-Yield Returns</h3>
+          <p className="text-gray-600 text-center">Earn competitive interest rates backed by real estate security.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Custom Lending</h3>
-          <p className="text-gray-600">Set your own criteria for property types and loan terms.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Custom Lending</h3>
+          <p className="text-gray-600 text-center">Set your own criteria for property types and loan terms.</p>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow-sm border-t-4 border-[#000080]">
-          <h3 className="font-bold text-lg text-gray-800 mb-2">Hands-Free Investing</h3>
-          <p className="text-gray-600">I handle screening, documentation, and follow-ups for you.</p>
+          <h3 className="font-bold text-lg text-gray-800 mb-2 text-center">Hands-Free Investing</h3>
+          <p className="text-gray-600 text-center">I handle screening, documentation, and follow-ups for you.</p>
         </div>
       </div>
 
