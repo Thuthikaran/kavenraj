@@ -49,7 +49,7 @@ const App = () => {
               className="cursor-pointer text-white font-bold uppercase text-xs py-1"
               onClick={() => setActiveComponent(name)}
             >
-              <div className="group flex items-center cursor-pointer py-1">
+              <div className="group flex items-center cursor-pointer py-2">
                 <span
                   className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all ${
                     activeComponent === name
